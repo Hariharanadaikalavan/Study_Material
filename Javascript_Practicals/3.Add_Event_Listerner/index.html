@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> <input type="number" placeholder="Enter First Number" id="first"></div>
+    <div><input type="number" placeholder="Enter second number" id="second"></div>
+
+    <div><button id="click"> Click here</button></div>
+
+    <div id="result">
+
+    </div>
+    </div>
+    <script>
+          var button = document.getElementById("click");
+
+        button.addEventListener("click", add);
+        button.addEventListener("dblclick", sub);
+        button.addEventListener("mouseout", aler);
+
+        function add(){
+            var one=document.getElementById("first").value;
+        var two=document.getElementById("second").value;
+        var final=one+two;
+        document.getElementById("result").innerHTML=final+"Addition";
+        }
+        function sub(){
+            var one=parseInt(document.getElementById("first").value);
+        var two=parseInt(document.getElementById("second").value);
+        var final=one-two;
+        document.getElementById("result").innerHTML=final+"subtraction";
+        }
+        function aler(){
+            alert("Vanakada maaplai")
+        }
+    </script>
+
+</body>
+</html>

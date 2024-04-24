@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            height: 50px;
+            width: 100px;
+            border:1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div> <input type="number" placeholder="Enter First Number" id="first"></div>
+    <div><input type="number" placeholder="Enter second number" id="second"></div>
+
+    <button id="btn"> Click here</button>
+
+    <div id="result">
+       
+    </div>
+    <script>
+        document.addEventListener("click",add);
+
+        function add(){
+            var one=parseInt(document.getElementById("first").value);
+        var two=parseInt(document.getElementById("second").value);
+         var final=one+two;
+        // document.getElementById("result").innerHTML="<h1>" +final;
+            console.log(final)
+        }
+    </script>
+</body>
+</html>

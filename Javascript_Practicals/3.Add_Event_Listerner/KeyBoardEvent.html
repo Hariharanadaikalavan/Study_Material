@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee>ONKEYUP function invoked</marquee>
+     <input type="text" id="textInput" onkeyup="key()">
+    <p id="output"></p>
+    <marquee>ONKEY DOWN Function </marquee>
+    <input type="text" id="textInput1" onkeydown="ke()">
+    <p id="output1"></p>
+
+    <input type="text" id="textInput2" onkeypress="kes()">
+    <p id="output2"></p>
+
+<script>
+    // const textInput = document.getElementById('textInput');
+    // const output = document.getElementById('output');
+
+    //textInput.addEventListener('keyup', function() {
+    //     var a = textInput.value;
+    //     output.innerHTML = a;
+    // });
+    
+    function key(){
+        var a=document.getElementById("textInput").value;
+        document.getElementById("output").innerHTML=a;
+    }
+    function ke(){
+        var a=document.getElementById("textInput1").value;
+        document.getElementById("output1").innerHTML=a;
+    }
+    function kes(){
+        var a=document.getElementById("textInput2").value;
+        document.getElementById("output2").innerHTML=a;
+    }
+
+
+</script>
+
+</script>
+</body>
+</html>
