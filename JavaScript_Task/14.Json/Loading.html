@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await Example</title>
+</head>
+<body>
+    <div id="app">Loading</div>
+
+    <script>
+        async function printNumbers(limit) {
+            for (let i = 1; i <= limit; i++) {
+                await delay(1000); // Wait for 1 second
+                appendNumber(".");
+            }
+        }
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function appendNumber(number) {
+            const app = document.getElementById('app');
+            app.innerHTML += number + ' ';
+        }
+
+        printNumbers(10); // Change 10 to the desired limit
+    </script>
+</body>
+</html>

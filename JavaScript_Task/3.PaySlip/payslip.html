@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            padding: 20px;
+            margin: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div>
+       
+        <label class="labelInput">Basic Pay</label>
+       
+        <input type="text" class="input" value="" placeholder="Enter Basic Pay" id="basicSal" onkeyup="displaySalaryDetails()">
+    </div>
+    <div>
+        
+        <label class="labelInput">DA</label></tr>
+        
+        <input type="number" class="input" value="" id="da"></tr>
+    </div>
+    <div>
+        <label class="labelInput">HRA</label>
+        <input type="number" class="input" value="" id="hra">
+    </div>
+    <div>
+        <label class="labelInput">Traveling</label>
+        <input type="number"  class="input" value="" id="travel">
+    </div>
+    <div>
+        <label class="labelInput">PF</label>
+        <input type="number"  class="input" value="" id="pf">
+    </div>
+    <div>
+        <label class="labelInput">Net Salary</label>
+        <input type="number"   class="input" value="" id="netSalary">
+    </div>
+    <div>
+        <label class="labelInput">Gross Salary</label>
+        <input type="number"  class="input" value="" id="grossSalary">
+    </div>
+</div>
+    <script src="./Payslip.js"></script>
+    <script>
+        document.getElementById("basicSal").addEventListener("keyup", displaySalaryDetails);
+    </script>
+</body>
+</html>
