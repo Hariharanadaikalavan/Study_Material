@@ -1,0 +1,152 @@
+1. What is HTML?
+HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages.
+
+2. What is a markup language?
+A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text. It specifies the structure and presentation of text and other elements within a document.
+
+3. What are the basic building blocks of HTML?
+The basic building blocks of HTML are elements, which are represented by tags. Tags are enclosed in angle brackets (<>) and usually come in pairs, with an opening tag and a closing tag.
+
+4. What is the structure of an HTML document?
+An HTML document typically consists of an <!DOCTYPE> declaration, an <html> element that contains a <head> and a <body> section.
+
+5. What is the purpose of the <!DOCTYPE> declaration?
+The <!DOCTYPE> declaration is used to specify the document type and version of HTML being used in the document. It helps the browser to render the web page correctly.
+
+6. What is the difference between HTML and XHTML?
+XHTML is a stricter and cleaner version of HTML, that follows the rules of XML. It requires all tags to be properly nested, all attribute values to be quoted, and all tags to be closed.
+
+7. What are empty elements in HTML?
+Empty elements in HTML are elements that do not have any content between their opening and closing tags. They are self-closing, and the closing tag is optional. Examples include <br>, <img>, and <input>
+
+8. What is the purpose of the <meta> tag?
+The <meta> tag is used to provide metadata about the HTML document. It can include information such as the character encoding, author, description, keywords, and viewport settings.
+
+
+9. What is the <div> element used for?
+The <div> element is a block-level container used to group together other HTML elements and apply styles or scripts to them collectively.
+
+10. What is the <span> element used for?
+The <span> element is an inline container used to apply styles or scripts to a specific section of text or inline elements.
+
+11. What is semantic HTML?
+Semantic HTML is the use of HTML markup to reinforce the meaning of the information in web pages rather than merely define its presentation or look. It helps improve accessibility, search engine optimization, and the clarity of the code.
+
+12. What is the difference between <strong> and <b> tags?
+Both <strong> and <b> tags are used to make text bold, but <strong> is a semantic tag that indicates that the enclosed text is of strong importance, while <b> is a presentational tag that simply applies bold styling.
+
+13. What is the difference between <em> and <i> tags?
+Both <em> and <i> tags are used to italicize text, but <em> is a semantic tag that indicates emphasis, while <i> is a presentational tag that simply applies italic styling.
+
+14. What is the purpose of the <a> tag?
+The <a> tag is used to create hyperlinks, allowing users to navigate between web pages or to different sections within the same page.
+
+15. What is the difference between absolute and relative URLs?
+An absolute URL contains the full address of the linked resource, including the protocol (http://or https://), domain name, and path, while a relative URL specifies the address of the linked resource relative to the current document.
+
+16. What is the purpose of the <img> tag?
+The <img> tag is used to embed images into an HTML document.
+
+17. What are the different types of lists in HTML?
+HTML supports three types of lists: unordered lists (<ul>), ordered lists (<ol>), and definition lists (<dl>)
+
+18. What is the purpose of the <table> element?
+The <table> element is used to create tables, which organize data into rows and columns.
+
+19. What is the purpose of the <form> element?
+The <form> element is used to create interactive forms for collecting user input, which can then be submitted to a server for processing.
+
+20. What are form controls in HTML?
+Form controls are elements used within a <form> element to collect user input, such as text inputs, checkboxes, radio buttons, select dropdowns, and buttons.
+
+21. What is the difference between GET and POST methods in HTML forms?
+The GET method submits form data as part of the URL in the query string, visible in the browser's address bar, while the POST method submits form data in the HTTP request body, keeping it hidden from view.
+
+22. What is the purpose of the <input> element?
+The <input> element is used to create various types of form controls, such as text inputs, checkboxes, radio buttons, and buttons.
+
+23. What is the purpose of the <textarea> element?
+The <textarea> element is used to create a multi-line text input field within a form.
+
+24. What are semantic elements in HTML5?
+Semantic elements in HTML5 are tags that provide meaning to the content they enclose, such as <header>, <footer>, <nav>, <article>, <section>, <aside>, and <main>.
+
+25. What is the purpose of the <header> and <footer> elements?
+The <header> element represents introductory content at the beginning of a page or section, while the <footer> element represents concluding content at the end of a page or section.
+
+26. What is the purpose of the <header> and <footer> elements?
+The <header> element represents introductory content at the beginning of a page or section, while the <footer> element represents concluding content at the end of a page or section.
+
+27. What is the purpose of the <nav> element?
+The <nav> element is used to define a section of navigation links within a document.
+
+    28. What is the purpose of the <article> element?
+The <article> element is used to define independent, self-contained content that can be distributed and reused independently.
+
+    29. What is the purpose of the <section> element?
+The <section> element is used to define a thematic grouping of content within a document, such as chapters, headers, footers, or any other grouping of content.
+
+    30. What is the purpose of the <aside> element?
+The <aside> element is used to define content that is tangentially related to the content around it, such as sidebars, pull quotes, or advertisements.
+
+    31. What is the purpose of the <main> element?
+The <main> element is used to define the main content area of a document, excluding any content that is repeated across multiple pages, such as headers, footers, or navigation links.
+
+    32. What are data attributes in HTML?
+Data attributes are custom attributes that can be added to HTML elements to store extra information. They are prefixed with data- and can be accessed using JavaScript.
+
+33. What is the purpose of the <iframe> element?
+The <iframe> element is used to embed another HTML document within the current document.
+
+    34. What is the purpose of the <audio> and <video> elements?
+The <audio> and <video> elements used to embed audio and video files, respectively, into an HTML document.
+
+
+35. What is the purpose of the <script> element?
+The <script> element is used to embed or reference JavaScript code within an HTML document.
+
+36. What is the difference between the <script> tag with and without the async attribute?
+When the async attribute is present, the script will be executed asynchronously soon as it is available, without blocking the rest of the page from loading. Without the async attribute, the script is executed synchronously, blocking the page load until it has finished downloading and executing.
+
+37. What is the difference between the <script> tag with and without the defer attribute?
+Scripts with the defer attribute will not execute until the HTML document has been fully parsed, whereas scripts without the defer attribute will execute as soon as they are encountered in the document, potentially blocking rendering of subsequent content.
+
+38. What is the purpose of the alt attribute in the <img> tag?
+The alt attribute specifies an alternative text description for an image, which is displayed if the image fails to load or if the user is using a screen reader.
+
+39. What is the purpose of the title attribute in HTML elements?
+The title attribute provides additional information about an element, typically displayed as a tooltip when the user hovers over the element.
+
+40. What is the purpose of the href attribute in the <a> tag?
+The href attribute specifies the URL of the linked resource.
+
+41. What is the purpose of the target attribute in the <a> tag?
+The target attribute specifies where to open the linked resource, such as in a new browser window or tab.
+
+42. What is the purpose of the rel attribute in the <a> tag?
+The rel attribute specifies the relationship between the current document and the linked resource, such as stylesheet for linking to a stylesheet or nofollow for indicating that the link should not be followed by search engines.
+
+43. What is the purpose of the src attribute in the <script> and <img> tags?
+The src attribute specifies the URL of the external script file to be loaded by the <script> tag or the URL of the image to be displayed by the <img> tag.
+
+44. What is the purpose of the type attribute in the <script> tag?
+The type attribute specifies the MIME type of the script being referenced, such as text/javascript for JavaScript code.
+
+45. What is the purpose of the charset attribute in the <meta> tag?
+The charset attribute specifies the character encoding used by the document, such as UTF-8 or ISO-8859-1
+
+46. What is the purpose of the lang attribute in HTML elements?
+The lang attribute specifies the primary language of the content contained within the element, which helps assistive technologies and search engines understand the content.
+
+47. What is the purpose of the role attribute in HTML elements?
+The role attribute specifies the role of the element in the document, especially for elements that do not have a semantic meaning or have an ambiguous meaning.
+
+48. What is the purpose of the aria- attributes in HTML elements?
+The aria- attributes are used to enhance the accessibility of HTML elements by providing additional information to assistive technologies, such as screen readers.
+
+49. What is the purpose of the content editable attribute in HTML elements?
+The content editable attribute specifies whether the content of an element is editable by the user.
+
+50. What is the purpose of the hidden attribute in HTML elements?
+The hidden attribute specifies that an element is not yet, or is no longer, relevant to the document's current state, and should be hidden from view.
+
