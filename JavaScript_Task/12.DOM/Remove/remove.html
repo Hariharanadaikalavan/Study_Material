@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulation Task</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <h2>DOM Manipulation Task</h2>
+    <input type="text" id="itemInput">
+    <button onclick="addItem()">Add Item</button>
+    <ul id="itemList"></ul>
+
+    <script>
+        function addItem() {
+            var itemInput = document.getElementById('itemInput');
+            var itemName = itemInput.value.trim();
+
+            if (itemName === '') {
+                alert('Please enter an item name.');
+                return;
+            }
+
+            var itemList = document.getElementById('itemList');
+            var li = document.createElement('li');
+            li.textContent = itemName;
+
+            // Add a button to remove the item
+            var removeButton = document.createElement('button');
+            removeButton.textContent = 'Remove';
+            removeButton.onclick = function() {
+                itemList.removeChild(li);
+            };
+            li.appendChild(removeButton);
+                    
+            itemList.appendChild(li);
+
+            // Clear the input field
+            itemInput.value = '';
+        }
+    </script>
+</body>
+</html>

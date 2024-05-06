@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Increment and Decrement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        #counter {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Increment and Decrement with Limit</h1>
+    <div>
+        <button id="decrement" onclick="decrement()">-</button>
+        <span id="counter">0</span>
+        <button id="increment" onclick="increment()">+</button>
+    </div>
+    <script>
+        let counter = 0;
+        const counterElement = document.getElementById('counter');
+
+        function increment() {
+            counter = Math.min(counter + 1, 10);
+            counterElement.textContent = counter;
+        }
+
+        function decrement() {
+            counter = Math.max(counter - 1, 0);
+            counterElement.textContent = counter;
+        }
+    </script>
+</body>
+</html>

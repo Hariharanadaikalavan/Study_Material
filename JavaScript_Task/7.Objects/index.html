@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Display</title>
+</head>
+<body>
+    <h1>Object Information</h1>
+    <div id="display"></div>
+    <button onclick="updateName()">Update Name</button>
+    <button onclick="updateAge()">Update Age</button>
+    <button onclick="addSkill()">Add Skill</button>
+
+    <script>
+        var obj = {
+            name: "hariharan",
+            age: 22,
+            skills: ["html", "css"]
+        };
+
+        var display = document.getElementById('display');
+        display.innerHTML = `
+            <p><strong>Name:</strong> ${obj.name}</p>
+            <p><strong>Age:</strong> ${obj.age}</p>
+            <p><strong>Skills:</strong> ${obj.skills.join(', ')}</p>
+        `;
+
+        function updateName() {
+            var newName = prompt("Enter new name:");
+            obj.name = newName;
+            display.innerHTML = `
+                <p><strong>Name:</strong> ${obj.name}</p>
+                <p><strong>Age:</strong> ${obj.age}</p>
+                <p><strong>Skills:</strong> ${obj.skills.join(', ')}</p>
+            `;
+        }
+
+        function updateAge() {
+            var newAge = prompt("Enter new age:");
+            obj.age = parseInt(newAge);
+            display.innerHTML = `
+                <p><strong>Name:</strong> ${obj.name}</p>
+                <p><strong>Age:</strong> ${obj.age}</p>
+                <p><strong>Skills:</strong> ${obj.skills.join(', ')}</p>
+            `;
+        }
+
+        function addSkill() {
+            var newSkill = prompt("Enter new skill:");
+            obj.skills.push(newSkill);
+            display.innerHTML = `
+                <p><strong>Name:</strong> ${obj.name}</p>
+                <p><strong>Age:</strong> ${obj.age}</p>
+                <p><strong>Skills:</strong> ${obj.skills.join(', ')}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
