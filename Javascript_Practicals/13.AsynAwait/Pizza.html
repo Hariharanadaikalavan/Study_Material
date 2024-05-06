@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- new promises(Executor)
+    status : pending
+    result :undefined
+
+    //resolve(value) 
+    status:fulfilled
+    result:value
+
+    reject(error)
+    status:rejected
+    result:error -->
+    <script>
+         console.log("working!!!!!")
+
+         function orderPizza(){
+            console.log("Pizza Ordered")
+            return new Promise((resolve,reject)=>{
+                const pizzaReady=false
+                setTimeout(()=>{
+                    if(pizzaReady){
+                    resolve("Delicious Pizza!!!!!!!!!")}
+                    else{
+                        reject("sorry we could not Deliver")
+                    }
+                },2000)
+            })
+         }
+
+         orderPizza()
+         .then(pizza=>{
+            console.log("pizza Delivered:",pizza) //Enjoy the pizza
+         })
+         .catch(error=>{
+            console.log("Pizza Delivered falied",error) //Handling the error
+         })
+    </script>
+</body>
+</html>

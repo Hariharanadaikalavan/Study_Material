@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Manager</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    button {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    #result {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <h2>Cookie Manager</h2>
+    <label for="cookieName">Cookie Name:</label>
+    <input type="text" id="cookieName">
+    <label for="cookieValue">Cookie Value:</label>
+    <input type="text" id="cookieValue">
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+    <button onclick="updateCookie()">Update Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+    <div id="result"></div>
+
+    <script>
+        function setCookie() {
+    var name = document.getElementById('cookieName').value;
+    var value = document.getElementById('cookieValue').value;
+    
+    // Set expiration date to 7 days from now
+    var expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 7);
+    
+    // Convert expiration date to UTC format
+    var expires = "; expires=" + expirationDate.toUTCString();
+
+    // Set the cookie
+    document.cookie = name + "=" + value + expires + "; path=/";
+
+    document.getElementById('result').innerText = 'Cookie set successfully';
+}
+
+
+        function getCookie() {
+            var name = document.getElementById('cookieName').value;
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.indexOf(name + "=") === 0) {
+                    document.getElementById('result').innerText = 'Cookie value: ' + cookie.substring(name.length + 1);
+                    return;
+                }
+            }
+            document.getElementById('result').innerText = 'Cookie not found';
+        }
+
+        function updateCookie() {
+            var name = document.getElementById('cookieName').value;
+            var value = document.getElementById('cookieValue').value;
+            if (document.cookie.indexOf(name + "=") === -1) {
+                document.getElementById('result').innerText = 'Cookie not found';
+                return;
+            }
+            document.cookie = name + "=" + value + ";";
+            document.getElementById('result').innerText = 'Cookie updated successfully';
+        }
+
+        function deleteCookie() {
+            var name = document.getElementById('cookieName').value;
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+            document.getElementById('result').innerText = 'Cookie deleted successfully';
+        }
+    </script>
+</body>
+</html>

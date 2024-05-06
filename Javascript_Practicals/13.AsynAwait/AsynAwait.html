@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async function always return a Promise in web browser
+        // async  function fn(){
+        //     return 'Async function exectued'
+        //     }
+        // console.log(fn())
+
+        let reach = new Promise((resolve, reject) => {
+    const reached = false;
+    if (reached) {
+        setTimeout(() => {
+            resolve("vidya");
+        }, 3000);
+    } else {
+        reject("vidya not reached");
+    }
+});
+
+async function status() {
+    console.log("hi");
+    try {
+        const res = await reach;
+        console.log(res);
+    } catch (error) {
+        console.log(error);
+    }
+    console.log("bye");
+}
+
+status();
+
+
+    </script>
+</body>
+</html>

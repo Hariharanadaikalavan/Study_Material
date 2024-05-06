@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const object = {
+    emp: "hariharan",
+    age: 22,
+    native: "karikudi",
+    skills:["js","html","css"]
+};
+const value = JSON.stringify(ghi); // Convert the object to a JSON string
+
+window.localStorage.setItem("name", value);
+
+var storedName = JSON.parse(localStorage.getItem("name"));
+console.log(storedName);
+</script>
+</body>
+</html>

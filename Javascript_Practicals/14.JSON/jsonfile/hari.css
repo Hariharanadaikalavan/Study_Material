@@ -1,0 +1,15 @@
+
+    tr:nth-child(odd){
+        background-image:linear-gradient(blue,yellow);
+    }
+    tr:nth-child(even)
+    {
+        background-image: linear-gradient(yellow,red);
+    }
+    .table{
+        font-size:xx-large;
+        justify-content: center;
+    }
+    #tbodyid{
+       text-transform: uppercase;
+    }
