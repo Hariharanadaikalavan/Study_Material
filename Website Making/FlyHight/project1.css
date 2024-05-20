@@ -1,0 +1,109 @@
+.thirdlayer {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+}
+.locationicon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.vertical-line {
+    border-left: 1px solid #dee2e6;
+    height: auto;
+    margin: 0 15px;
+}
+
+.carousel-item {
+    height: 300px;
+   
+}
+.secondlayer{
+    margin: 50px;
+}
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.a{
+    height: 300px;
+    width: 80%;
+    border: 1pxsolid;
+    border-radius: 8px;
+    margin-left: 70px;
+    background-image: url(Image1.jpg);
+    background-position: cover;
+    
+    
+}
+.thirdlayer{
+    background-color: rgb(196, 182, 167);
+    display: inline-flex;
+    position: relative;
+    bottom: 85px;
+}
+.b{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+.location{
+    height: 100px;
+    width:800px;
+    border:1px solid;
+    margin-bottom: 50px;
+}
+.btn-1{
+    border-radius: 12px;
+    height: 30px;
+    width: 100px;
+    color:black;
+    background-color: white;
+    border: 0px;
+  
+}
+
+.btn-2{
+    border-radius: 8px;
+    height:30px;
+    width: 100px;
+    color:white;
+    background-color:black;
+
+}
+.bi-search{
+    color: black;
+}
+.bi-search2{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+.third{
+    position: relative;
+    bottom: 45px;
+}
+.ratingbox {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.first {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+}
