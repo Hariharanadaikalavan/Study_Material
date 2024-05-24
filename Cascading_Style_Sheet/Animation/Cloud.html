@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise with Moving Clouds</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #87CEEB; /* sky blue */
+            position: relative;
+            height: 100vh;
+        }
+        
+        .sun {
+            width: 100px;
+            height: 100px;
+            background-color: #FFD700; /* gold */
+            border-radius: 50%;
+            position: absolute;
+            top: 100vh;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: rise 10s linear infinite;
+        }
+        
+        @keyframes rise {
+            0% {
+                top: 100vh;
+            }
+            100% {
+                top: 0;
+            }
+        }
+        
+        .cloud {
+            width: 200px;
+            height: 80px;
+            background-color: #FFFFFF; /* white */
+            border-radius: 50px;
+            position: absolute;
+            top: 20%;
+            left: -200px;
+            animation: moveCloud 20s linear infinite;
+        }
+        
+        @keyframes moveCloud {
+            0% {
+                left: -200px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="cloud"></div>
+</body>
+</html>

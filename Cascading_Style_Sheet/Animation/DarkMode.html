@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entries Screen Color Toggle</title>
+<style>
+    body {
+        transition: background-color 0.5s;
+        background-color: white; /* Default background color */
+        color: black; /* Default text color */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .dark {
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <button onclick="toggleColor()">Click</button>
+    <script>
+        function toggleColor() {
+            var body = document.body;
+            body.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
