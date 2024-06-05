@@ -89,7 +89,7 @@ function App() {
 
 export default App;
 
-<!------------Use State & Use Effect using API Fetch---------------------->
+<!------------Use State & Use Effect using API Fetch Create your file As useFetchData.js---------------------->
 
 import { useState, useEffect} from 'react'
 
@@ -107,13 +107,6 @@ function useFetchData(url) {
 }
 
 export default useFetchData
-
-useEffect(() => {
-      fetch(url)
-        .then((res) => res.json())
-        .then((data) => setData(data))
-        .catch((err) => console.log(`Error: ${err}`));
-    }, [url]);
 
 <!------------API Fetch---------------------->
 
