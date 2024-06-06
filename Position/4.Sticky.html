@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header Example</title>
+    <style>
+          .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+          
+            padding: 10px;
+         
+            position: sticky;
+            width: 100%;
+            /* bottom: 0px; */
+            /* The postion it should lie on that container */
+           top:0px; 
+            z-index: 1000; /* Ensure vit's above other content */
+        }
+
+        .content {
+            padding: 20px;
+            height: 2000px; /* Just to make the page scrollable */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        NavBar Header Part
+        
+     </div>
+ 
+    <div class="content">
+        <h1>Scroll down to see the effect</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus quam sit amet mauris tempus, id posuere justo tincidunt. Sed vehicula, enim ut laoreet accumsan, nulla metus accumsan sapien, eu placerat metus ex vel magna.</p>
+        <div id="secondpart" class="justify-content-around ">
+            <div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://png.pngtree.com/background/20230613/original/pngtree-an-indian-dosa-is-sitting-on-a-plate-picture-image_3429153.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dosai</h5>
+                      <p class="card-text">Tradition food in Tamilnadu</p>
+                      <a href="#" class="btn btn-primary">click me </a>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://png.pngtree.com/background/20230613/original/pngtree-an-indian-dosa-is-sitting-on-a-plate-picture-image_3429153.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dosai</h5>
+                      <p class="card-text">Tradition food in Tamilnadu</p>
+                      <a href="#" class="btn btn-primary">click me </a>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="https://png.pngtree.com/background/20230613/original/pngtree-an-indian-dosa-is-sitting-on-a-plate-picture-image_3429153.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dosai</h5>
+                      <p class="card-text">Tradition food in Tamilnadu</p>
+                      <a href="#" class="btn btn-primary">click me </a>
+                    </div>
+                  </div>
+               </div>
+            </div>
+    </div>
+   
+</body>
+</html>

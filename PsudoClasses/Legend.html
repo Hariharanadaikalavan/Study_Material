@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Placeholder to Legend</title>
+    <style>
+        .input-container {
+            position: relative;
+            margin: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        fieldset {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <fieldset>
+            <legend id="legendField"></legend>
+            <input type="text" id="inputField" placeholder="Enter your name" onclick="movePlaceholderToLegend()">
+        </fieldset>
+    </div>
+
+    <script>
+        function movePlaceholderToLegend() {
+            var inputField = document.getElementById('inputField');
+            var legendField = document.getElementById('legendField');
+            if (legendField.innerText === '') {  // Check if the legend is empty
+                legendField.innerText = inputField.placeholder;
+                inputField.placeholder = '';
+            }
+        }
+    </script>
+</body>
+</html>
